@@ -15,10 +15,11 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
     flex: 1;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 footer {
