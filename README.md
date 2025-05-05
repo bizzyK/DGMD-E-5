@@ -1,6 +1,6 @@
 # Our River: Picking Up the Story
 
-This project is a multimedia digital storytelling website created for the DGMD E-5 course. It documents the Connecticut River and serves as a public-facing starting point for a longer-term effort to complete a documentary project started by the student’s father.
+This project is a multimedia digital storytelling website created for the DGMD E-5 course. It documents the Connecticut River and serves as a public-facing starting point for a longer-term effort to complete a documentary project started by my father.
 
 ## Project Description
 
@@ -13,10 +13,8 @@ The site is designed as a single-page application and includes:
 ## Technologies Used
 
 - HTML5/CSS3
-- JavaScript (Vanilla JS with hash routing)
+- JavaScript
 - GitHub Pages (for deployment)
-- SVG icons
-- Custom audio player controls
 
 ## Folder Structure
 
