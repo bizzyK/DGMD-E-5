@@ -10,20 +10,21 @@
 <div id="header"></div>
 
 <main>
-
+    <h2>Media</h2>
     <section class="media-section">
-        <h2 id="project-video">Project Video</h2>
+        <h2 id="project-video">Video</h2>
         <div class="video-wrapper">
-            <video controls width="700">
+            <video controls width="80%" height="auto">
                 <source src="video/placeholder-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>
+
     <section class="media-section">
         <h2 id="photos">Photos</h2>
         <div id="photo-stepper" class="stepper-wrapper">
-            <img id="stepper-img" src="images/placeholder1.png" alt="Stepper image" style="width: 700px;" />
+            <img id="stepper-img" src="images/placeholder1.png" alt="Connecticut River landscape placeholder" style="width: 80%;" />
             <div class="button-row">
                 <button class="stepper-button" onclick="prevPhoto()">Previous</button>
                 <button class="stepper-button" onclick="nextPhoto()">Next</button>
@@ -31,9 +32,8 @@
         </div>
     </section>
 
-
-
     <script>
+        // Cycling through 3 placeholder images (placeholder1.png to placeholder3.png)
         const photos = [...Array(3).keys()].map(i => `images/placeholder${i+1}.png`);
         let current = 0;
         function updatePhoto() {
