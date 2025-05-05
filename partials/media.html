@@ -2,23 +2,29 @@
     <section>
         <h2>Media</h2>
 
-            <h3 id="project-video">Project Video</h3>
-            <div class="video-wrapper">
-                <video controls width="80%" height="auto">
-                    <source src="video/placeholder-video.mp4" type="video/mp4"/>
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <h3 id="project-video">Video</h3>
+        <div class="video-wrapper">
+            <video controls width="80%" height="auto">
+                <source src="/video/placeholder-video.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
         <section>
+
             <h3 id="project-photos">Project Photos</h3>
-                <img id="stepper-img" src="/images/placeholder1.png" alt="Connecticut River landscape placeholder"
+            <div class="stepper-wrapper">
+                <img id="stepper-img" src="/images/placeholder.png" alt="Connecticut River Placeholder"
                      style="width: 100%;"/>
                 <div class="button-row">
                     <button class="stepper-button" onclick="prevPhoto()">Previous</button>
                     <button class="stepper-button" onclick="nextPhoto()">Next</button>
                 </div>
-
+            </div>
+            <p>Click the buttons to cycle through the images.</p>
+            <p>Click the image to view it in full size.</p>
         </section>
+
+
     </section>
 </section>
