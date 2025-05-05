@@ -65,31 +65,21 @@ footer {
     background: #ccc;
 }
 
-audio.minimal-controls {
-  width: 100px;
-  height: 32px;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-}
-
-/* Chrome/Safari custom audio UI strip */
-audio.minimal-controls::-webkit-media-controls-panel {
-  background-color: transparent;
-  height: 32px;
-  padding: 0;
-}
-
-audio.minimal-controls::-webkit-media-controls-volume-slider,
-audio.minimal-controls::-webkit-media-controls-timeline,
-audio.minimal-controls::-webkit-media-controls-current-time-display,
-audio.minimal-controls::-webkit-media-controls-time-remaining-display {
-  display: none !important;
-}
 
 .media-section {
     margin-bottom: 3rem;
     text-align: center;
+}
+
+#audio-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero {
