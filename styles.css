@@ -1,3 +1,4 @@
+/* Base Layout */
 body {
     font-family: Montserrat, sans-serif;
     margin: 0;
@@ -9,6 +10,24 @@ body {
     min-height: 100vh;
 }
 
+main {
+    background-image: url('images/placeholder-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    flex: 1;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 0.25rem;
+    background: #ccc;
+}
+
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
     margin: 5px;
     padding: 0;
@@ -31,6 +50,7 @@ h3 {
     color: #005377;
 }
 
+/* Navigation */
 header {
     background-color: #005377;
     color: white;
@@ -48,40 +68,7 @@ nav a:hover {
     text-decoration: none;
 }
 
-main {
-    background-image: url('images/placeholder-image.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 2rem;
-    flex: 1;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-footer {
-    text-align: center;
-    padding: .25rem;
-    background: #ccc;
-}
-
-
-.media-section {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-#audio-toggle {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Hero Section */
 .hero {
     max-width: 80%;
     padding: 2rem;
@@ -99,6 +86,12 @@ footer {
     background: rgba(0, 0, 0, 0.25);
     padding: 1rem;
     border-radius: 0.25rem;
+}
+
+/* Media Layout */
+.media-section {
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 .video-wrapper {
@@ -124,12 +117,15 @@ footer {
     margin-bottom: 1rem;
 }
 
-#photo-stepper button {
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+/* Stepper Controls */
+.button-row {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
 }
 
+#photo-stepper button,
 .stepper-button {
     background-color: #005377;
     color: white;
@@ -137,18 +133,23 @@ footer {
     padding: 0.3rem 0.6rem;
     font-size: 0.9rem;
     border-radius: 4px;
-    margin: 0.25rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 0.25rem;
 }
 
 .stepper-button:hover {
     background-color: #003f5c;
 }
 
-.button-row {
+/* Audio Toggle */
+#audio-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
     justify-content: center;
-    margin-top: 0.5rem;
 }
