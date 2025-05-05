@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
     <title>Our River: Picking Up the Story</title>
-    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div id="header"></div>
+<div id="header">
+    <header style="position: relative;">
+        <h1>Our River: Picking Up the Story</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#media">Media</a>
+            <a href="#presentation">Presentation</a>
+        </nav>
+        <div style="position: absolute; top: 10px; right: 10px;">
+            <audio controls class="minimal-controls">
+                <source src="audio/placeholder-audio.m4a" type="audio/mp4"/>
+            </audio>
+        </div>
+    </header>
+</div>
 
-<main>
-    <section>
-        <h2>Welcome</h2>
-        <p>“Our River: Picking Up the Story” is a multimedia documentary project and the launch point for a long-term mission: to complete the unfinished work of my father’s film about the Connecticut River. Through personal storytelling, original photography, and a short video, this project reintroduces the river’s cultural, historical, and ecological importance—while inviting others to help carry the story forward. This site marks the beginning of that journey.</p>
-    </section>
-    <section>
-        <img src="images/placeholder-image.png" alt="River scene" style="width:100%;">
-    </section>
+
+<main id="content">
+    <!-- Page content loads here -->
 </main>
 
-<div id="footer"></div>
-<script src="scripts/includes.js"></script>
+<div id="footer">
+    <footer>
+        <p>&copy; 2025 Our River Project</p>
+    </footer>
+</div>
+
+<script src="scripts/router.js"></script>
 </body>
 </html>

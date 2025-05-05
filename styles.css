@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
     background: #f8f8f8;
@@ -7,6 +7,28 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+h2 {
+    position: absolute;
+    top: 100px;
+    font-size: 1.25rem;
+    color: #005377;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #005377;
 }
 
 header {
@@ -27,9 +49,13 @@ nav a:hover {
 }
 
 main {
+    background-image: url('images/placeholder-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 2rem;
     flex: 1;
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -66,12 +92,40 @@ audio.minimal-controls::-webkit-media-controls-time-remaining-display {
     text-align: center;
 }
 
-.video-wrapper,
+.hero {
+    max-width: 80%;
+    padding: 2rem;
+    flex: 1;
+    margin: 0 auto;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero p {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
 .stepper-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
 
 #photo-stepper img {
