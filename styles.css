@@ -29,10 +29,82 @@ nav a:hover {
 main {
     padding: 2rem;
     flex: 1;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 footer {
     text-align: center;
     padding: .25rem;
     background: #ccc;
+}
+
+audio.minimal-controls {
+  width: 100px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+/* Chrome/Safari custom audio UI strip */
+audio.minimal-controls::-webkit-media-controls-panel {
+  background-color: transparent;
+  height: 32px;
+  padding: 0;
+}
+
+audio.minimal-controls::-webkit-media-controls-volume-slider,
+audio.minimal-controls::-webkit-media-controls-timeline,
+audio.minimal-controls::-webkit-media-controls-current-time-display,
+audio.minimal-controls::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+.media-section {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.video-wrapper,
+.stepper-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo-stepper img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#photo-stepper button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.stepper-button {
+    background-color: #005377;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stepper-button:hover {
+    background-color: #003f5c;
+}
+
+.button-row {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
 }

@@ -1,0 +1,18 @@
+.
+├── about.html
+├── audio
+│   └── placeholder-audio.mp4
+├── footer.html
+├── header.html
+├── images
+│   └── placeholder-image.png
+├── index.html
+├── media.html
+├── scripts
+│   └── includes.js
+├── styles.css
+├── tree.txt
+└── video
+    └── placeholder-video.mp4
+
+5 directories, 11 files

@@ -10,17 +10,47 @@
 <div id="header"></div>
 
 <main>
-    <h2>Photos</h2>
-    <img src="images/sample1.jpg" alt="River scene" width="500">
 
-    <h2>Ambient Sound</h2>
-    <audio controls>
-        <source src="audio/ambient1.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-    </audio>
+
+    <section class="media-section">
+        <h2 id="photos">Photos</h2>
+        <div id="photo-stepper" class="stepper-wrapper">
+            <img id="stepper-img" src="images/placeholder1.png" alt="Stepper image" style="width: 100%;" />
+            <div class="button-row">
+                <button class="stepper-button" onclick="prevPhoto()">Previous</button>
+                <button class="stepper-button" onclick="nextPhoto()">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="media-section">
+        <h2 id="project-video">Project Video</h2>
+        <div class="video-wrapper">
+            <video controls width="700">
+                <source src="video/placeholder-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <script>
+        const photos = [...Array(3).keys()].map(i => `images/placeholder${i+1}.png`);
+        let current = 0;
+        function updatePhoto() {
+            document.getElementById('stepper-img').src = photos[current];
+        }
+        function prevPhoto() {
+            current = (current - 1 + photos.length) % photos.length;
+            updatePhoto();
+        }
+        function nextPhoto() {
+            current = (current + 1) % photos.length;
+            updatePhoto();
+        }
+    </script>
 </main>
 
 <div id="footer"></div>
-<script src="/scripts/includes.js"></script>
+<script src="scripts/includes.js"></script>
 </body>
 </html>
