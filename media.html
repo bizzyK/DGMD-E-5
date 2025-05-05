@@ -11,7 +11,15 @@
 
 <main>
 
-
+    <section class="media-section">
+        <h2 id="project-video">Project Video</h2>
+        <div class="video-wrapper">
+            <video controls width="700">
+                <source src="video/placeholder-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
     <section class="media-section">
         <h2 id="photos">Photos</h2>
         <div id="photo-stepper" class="stepper-wrapper">
@@ -23,15 +31,7 @@
         </div>
     </section>
 
-    <section class="media-section">
-        <h2 id="project-video">Project Video</h2>
-        <div class="video-wrapper">
-            <video controls width="700">
-                <source src="video/placeholder-video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
+
 
     <script>
         const photos = [...Array(3).keys()].map(i => `images/placeholder${i+1}.png`);
