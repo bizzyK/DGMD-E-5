@@ -30,19 +30,14 @@ The site is designed as a single-page application and includes:
   - media.html
   - presentation.html
 /images/               # Project images
-/video/                # Placeholder/project videos
-/audio/                # Ambient river audio
+/video/                # Project videos
+/audio/                # Project audio
 ```
 
 ## Deployment
 
 The site is live on GitHub Pages at:
 https://bizzyk.github.io/DGMD-E-5/
-
-To update:
-1. Commit your changes.
-2. Push to `main` branch.
-3. GitHub Pages will auto-deploy from `main`.
 
 ## License
 
