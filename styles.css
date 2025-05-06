@@ -69,15 +69,15 @@ nav a:hover {
     text-decoration: none;
 }
 
-/* Hero Section */
+/* Hero Section - Centered container with max 80% width */
 .hero {
-    max-width: 80%;
-    padding: 2rem;
-    flex: 1;
-    margin: 0 auto;
-    color: white;
-    min-height: 100vh;
-    display: flex;
+    max-width: 80%;       /* Constrain width to 80% of viewport */
+    padding: 2rem;        /* Inner spacing */
+    flex: 1;              /* Allow flexible growth within parent */
+    margin: 0 auto;       /* Center horizontally */
+    color: white;         /* White text on dark/colored background */
+    min-height: 100vh;    /* Ensure full screen height */
+    display: flex;        /* Flex container for vertical centering */
     align-items: center;
     justify-content: center;
     text-align: center;
