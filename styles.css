@@ -10,16 +10,31 @@ body {
     min-height: 100vh;
 }
 
+
 main {
-    background-image: url('images/placeholder-image.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 0;
     margin: 0;
     flex: 1;
+    z-index: 1;
+    background-color: transparent;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/river1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Change this value to adjust transparency */
+    z-index: -1;
 }
 
 footer {
@@ -41,7 +56,7 @@ h1 {
 
 h2 {
     position: absolute;
-    top: 100px;
+    top: 30px;
     font-size: 1.25rem;
     color: #005377;
 }
@@ -83,8 +98,8 @@ nav a:hover {
     text-align: center;
 }
 
-.hero p {
-    background: rgba(0, 0, 0, 0.25);
+.hero p, .contact-form {
+    background: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-radius: 0.25rem;
 }
@@ -156,4 +171,49 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #005377;
+    margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #005377;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #003f5c;
 }
