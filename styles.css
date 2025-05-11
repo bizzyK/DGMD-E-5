@@ -96,13 +96,13 @@ nav a:hover {
 
 /* Hero Section - Centered container with max 80% width */
 .hero {
-    max-width: 80%;       /* Constrain width to 80% of viewport */
-    padding: 2rem;        /* Inner spacing */
-    flex: 1;              /* Allow flexible growth within parent */
-    margin: 0 auto;       /* Center horizontally */
-    color: white;         /* White text on dark/colored background */
-    min-height: 100vh;    /* Ensure full screen height */
-    display: flex;        /* Flex container for vertical centering */
+    max-width: 80%; /* Constrain width to 80% of viewport */
+    padding: 2rem; /* Inner spacing */
+    flex: 1; /* Allow flexible growth within parent */
+    margin: 0 auto; /* Center horizontally */
+    color: white; /* White text on dark/colored background */
+    min-height: 100vh; /* Ensure full screen height */
+    display: flex; /* Flex container for vertical centering */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -209,7 +209,7 @@ nav a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
     font-size: 2rem;
@@ -218,8 +218,13 @@ nav a:hover {
     z-index: 1;
 }
 
-.carousel-button.prev { left: 10px; }
-.carousel-button.next { right: 10px; }
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
 
 /* Mission Page Styles */
 .page-hero {
@@ -239,7 +244,7 @@ nav a:hover {
     padding: 1rem;
     background: white;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #about-film h2,
@@ -313,7 +318,7 @@ nav a:hover {
     padding: 1rem;
     background: white;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #why-it-matters ul {
@@ -333,7 +338,7 @@ nav a:hover {
     padding: 1rem;
     background: white;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #ways-to-help h2,
@@ -406,7 +411,7 @@ nav a:hover {
     padding: 1rem;
     background: white;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #updates h2,
@@ -483,7 +488,7 @@ nav a:hover {
     padding: 1rem;
     background: white;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #documentary-resource h2 {
@@ -514,7 +519,7 @@ nav a:hover {
     padding: 1rem;
     background: white;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #about-org h2 {
@@ -546,7 +551,14 @@ nav a:hover {
     padding: 1rem;
     background: white;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#presentation-video .container a,
+#final-writeup .container a {
+    color: #005377;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #presentation-video h2,
@@ -561,6 +573,7 @@ nav a:hover {
     line-height: 1.6;
     font-size: 1.05rem;
 }
+
 #dgmd a {
     color: white;
     text-decoration: none;
