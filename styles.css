@@ -45,9 +45,11 @@ main::before {
 }
 
 footer {
+    position: relative;
+    z-index: 2;
     text-align: center;
     padding: 0.25rem;
-    background: #ccc;
+    background-color: #ccc;
 }
 
 /* Typography */
@@ -63,7 +65,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: .1rem;
     color: #005377;
     position: static;
 }
@@ -231,7 +233,7 @@ nav a:hover {
 /* Film Page Layout Enhancements */
 #about-film .container,
 #support .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -305,7 +307,7 @@ nav a:hover {
 }
 
 #mission-statement, #legacy, #impact, #why-it-matters {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -325,7 +327,7 @@ nav a:hover {
 /* Involved Page Layout Enhancements */
 #ways-to-help .container,
 #join-us .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -398,7 +400,7 @@ nav a:hover {
 #resource-list .container,
 #partners .container,
 #contact-info .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -475,7 +477,7 @@ nav a:hover {
 }
 
 #documentary-resource .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -506,7 +508,7 @@ nav a:hover {
 }
 
 #about-org .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -538,7 +540,7 @@ nav a:hover {
 
 #presentation-video .container,
 #final-writeup .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     background: white;
@@ -562,4 +564,11 @@ nav a:hover {
     color: white;
     text-decoration: none;
     font-size: 1rem;
+}
+
+#mission-statement h2,
+#legacy h2,
+#impact h2,
+#why-it-matters h2 {
+    text-align: center;
 }
