@@ -2,9 +2,11 @@ const content = document.getElementById("content");
 
 const routes = {
     "#home": "partials/home.html",
-    "#about": "partials/about.html",
-    "#gallery": "partials/gallery.html",
-    "#video": "partials/video.html",
+    "#mission": "partials/mission.html",
+    "#film": "partials/film.html",
+    "#involved": "partials/involved.html",
+    "#resources": "partials/resources.html",
+    "#news": "partials/news.html",
     "#presentation": "partials/presentation.html",
     "#contact": "partials/contact.html",
 };
@@ -18,6 +20,22 @@ function loadPage(hash) {
             const wasPlaying = audio && !audio.paused;
 
             content.innerHTML = html;
+
+            const track = document.querySelector('.carousel-track');
+            if (track) {
+                const images = track.querySelectorAll('img');
+                let index = 0;
+
+                document.querySelector('.next')?.addEventListener('click', () => {
+                    index = (index + 1) % images.length;
+                    track.style.transform = `translateX(-${index * 100}%)`;
+                });
+
+                document.querySelector('.prev')?.addEventListener('click', () => {
+                    index = (index - 1 + images.length) % images.length;
+                    track.style.transform = `translateX(-${index * 100}%)`;
+                });
+            }
 
             if (wasPlaying && audio && audio.paused) {
                 audio.paused = false;
@@ -88,21 +106,3 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("hashchange", () => {
     loadPage(window.location.hash);
 });
-
-// Cycling through 3 placeholder images (placeholder1.png to placeholder3.png)
-const photos = [...Array(3).keys()].map(i => `images/placeholder${i + 1}.png`);
-let current = 0;
-
-function updatePhoto() {
-    document.getElementById('stepper-img').src = photos[current];
-}
-
-function prevPhoto() {
-    current = (current - 1 + photos.length) % photos.length;
-    updatePhoto();
-}
-
-function nextPhoto() {
-    current = (current + 1) % photos.length;
-    updatePhoto();
-}
