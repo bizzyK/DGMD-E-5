@@ -456,7 +456,25 @@ nav a:hover {
     font-weight: bold;
 }
 
+#resource-list a:visited {
+    color: #005377;
+}
+
 #resource-list a:hover {
+    text-decoration: none;
+}
+
+#partners a {
+    color: #005377;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#partners a:visited {
+    color: #005377;
+}
+
+#partners a:hover {
     text-decoration: none;
 }
 
