@@ -1,3 +1,12 @@
+/* Remove underline from all links globally */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /* Base Layout */
 body {
     font-family: Montserrat, sans-serif;
@@ -265,7 +274,13 @@ nav a:hover {
 
 /* CTA Button Styles */
 .cta-buttons {
-    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .cta-buttons a {
@@ -442,7 +457,7 @@ nav a:hover {
 }
 
 #resource-list a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #documentary-resource .container {
@@ -471,8 +486,9 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* Remove underline on hover for documentary-resource links */
 #documentary-resource a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #about-org .container {
@@ -493,6 +509,17 @@ nav a:hover {
 #about-org p {
     line-height: 1.6;
     font-size: 1.05rem;
+}
+
+#about-org a {
+    color: #005377;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Remove underline on hover for about-org links */
+#about-org a:hover {
+    text-decoration: none;
 }
 
 #presentation-video .container,
